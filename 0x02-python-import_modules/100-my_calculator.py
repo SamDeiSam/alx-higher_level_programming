@@ -15,7 +15,7 @@ if __name__ == "__main__":
         print("{} {} {} = {}".format(a, optor, b, add(a, b)))
     elif optor is '-':
         print("{} {} {} = {}".format(a, optor, b, sub(a, b)))
-    elif optor  is '*':
+    elif optor is '*':
         print("{} {} {} = {}".format(a, optor, b, mul(a, b)))
     elif optor is '/':
         print("{} {} {} = {}".format(a, optor, b, div(a, b)))
