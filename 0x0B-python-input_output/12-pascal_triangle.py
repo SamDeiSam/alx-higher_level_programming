@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Module 14-pascal_triangle.
+"""Module 12-pascal_triangle.
 Returns a list of lists of integers
-representing the Pascal’s triangle of n.
+representing the Pascals triangle of n.
 """
 
 
