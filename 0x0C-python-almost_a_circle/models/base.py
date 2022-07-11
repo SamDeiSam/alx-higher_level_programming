@@ -38,6 +38,7 @@ class Base:
             - list_dictionaries: list of dicts
 
         Returns: JSON representation of the list
+                if list_dictionaries is none: "[]"
         """
 
         if list_dictionaries is None or list_dictionaries == []:
