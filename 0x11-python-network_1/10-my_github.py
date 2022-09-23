@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Takes in Github credentials (username and password)
+"""Takes in Github creds (username and password)
 and uses the Github API to display an id
 """
 
-import requests
 import sys
+import requests
 from requests.auth import HTTPBasicAuth
 
 if __name__ == "__main__":
