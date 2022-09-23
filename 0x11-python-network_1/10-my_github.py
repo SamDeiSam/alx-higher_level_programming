@@ -3,14 +3,13 @@
 and uses the Github API to display an id
 """
 
-import sys
-import requests
-from requests.auth import HTTPBasicAuth
-
 if __name__ == "__main__":
-    username = sys.argv[1]
-    password = sys.argv[2]
+    import requests
+    import sys
 
-    token = HTTPBasicAuth(username, password)
-    request = requests.get('https://api.github.com/user', auth=token)
-    print(request.json().get('id')
+    r = requests.get('https://api.github.com/user',
+                    auth=(sys.argv[1], sys.argv[2]))
+    if r.status_code >= 400:
+        print('None')
+    else:
+        print(r.json().get('id'))
